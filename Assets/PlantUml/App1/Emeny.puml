@@ -1,0 +1,14 @@
+@startuml
+class Emeny {
+    - patrolPosition : List<Transform>
+    - playerLayerMask : LayerMask
+    - rb : Rigidbody2D
+    - animator : Animator
+    - index : int = 0
+    - Awake() : void
+    - Update() : void
+    - OnCollisionEnter2D(other:Collision2D) : void
+    - GoToPosition(location:Vector3) : void
+}
+MonoBehaviour <|-- Emeny
+@enduml

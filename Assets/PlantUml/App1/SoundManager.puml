@@ -1,0 +1,17 @@
+@startuml
+class SoundManager {
+    - playerController : GameObject
+    - audioSource : AudioSource
+    - audioClips : List<AudioClip>
+    - volume : int
+    - Awake() : void
+    - Start() : void
+    - Player_OnDead(sender:object, e:EventArgs) : void
+    - Player_OnHurt(sender:object, e:EventArgs) : void
+    - Player_CoinCollected(sender:object, e:EventArgs) : void
+    + Volume() : int
+    + VolumeIncreas() : void
+    + VolumeDcrease() : void
+}
+MonoBehaviour <|-- SoundManager
+@enduml

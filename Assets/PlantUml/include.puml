@@ -1,0 +1,11 @@
+@startuml
+!include .\\Attack.puml
+!include .\\Emeny.puml
+!include .\\GameManager.puml
+!include .\\HealthSystem.puml
+!include .\\HealthUI.puml
+!include .\\OptionUI.puml
+!include .\\PlayerController.puml
+!include .\\SoundManager.puml
+!include .\\SoundUI.puml
+@enduml

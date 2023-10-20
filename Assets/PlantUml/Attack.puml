@@ -1,0 +1,7 @@
+@startuml
+class Attack {
+    - Start() : void
+    - Update() : void
+}
+MonoBehaviour <|-- Attack
+@enduml

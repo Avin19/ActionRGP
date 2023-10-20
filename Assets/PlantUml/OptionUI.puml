@@ -1,0 +1,12 @@
+@startuml
+class OptionUI {
+    - soundMenu : GameObject
+    - coinAmountText : TextMeshProUGUI
+    - playerController : PlayerController
+    - coinAmount : int
+    - Awake() : void
+    - Start() : void
+    - Player_CoinColled(sender:object, e:EventArgs) : void
+}
+MonoBehaviour <|-- OptionUI
+@enduml

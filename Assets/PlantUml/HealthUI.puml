@@ -1,0 +1,11 @@
+@startuml
+class HealthUI {
+    - healthSilder : Slider
+    - playerHealthSystem : HealthSystem
+    - Awake() : void
+    - Start() : void
+    - Update() : void
+    - Player_OnDead(sender:object, e:EventArgs) : void
+}
+MonoBehaviour <|-- HealthUI
+@enduml

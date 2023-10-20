@@ -1,0 +1,16 @@
+@startuml
+class HealthSystem {
+    - health : int
+    - maxHealth : int
+    +  <<event>> OnDead : EventHandler 
+    +  <<event>> OnHeal : EventHandler 
+    +  <<event>> OnHurt : EventHandler 
+    - Start() : void
+    - Update() : void
+    + Damage(damage:int) : void
+    + Heal(heal:int) : void
+    + GetHealth() : int
+    + GetMaxHealth() : int
+}
+MonoBehaviour <|-- HealthSystem
+@enduml

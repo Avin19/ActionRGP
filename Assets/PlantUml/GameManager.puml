@@ -1,0 +1,8 @@
+@startuml
+class GameManager {
+    - deadUi : GameObject
+    - winUI : GameObject
+    - Awake() : void
+}
+MonoBehaviour <|-- GameManager
+@enduml

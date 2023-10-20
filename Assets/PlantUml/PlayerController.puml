@@ -1,0 +1,18 @@
+@startuml
+class PlayerController {
+    - moveSpeed : float = 20f
+    - rb : Rigidbody2D
+    - animator : Animator
+    +  <<event>> OnPlayerAttacking : EventHandler 
+    +  <<event>> OnCoinCollection : EventHandler 
+    - lastMoveDir : Vector3
+    - enemiesLayerMask : LayerMask
+    - healthSystem : HealthSystem
+    - Awake() : void
+    - Update() : void
+    - MovementHandler() : void
+    - OnTriggerEnter2D(other:Collider2D) : void
+    - Attack() : void
+}
+MonoBehaviour <|-- PlayerController
+@enduml

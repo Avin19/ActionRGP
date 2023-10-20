@@ -1,0 +1,17 @@
+@startuml
+class SoundUI {
+    - soundmanager : SoundManager
+    - musicManager : AudioSource
+    - soundText : TextMeshProUGUI
+    - musicText : TextMeshProUGUI
+    - volume : int
+    - Awake() : void
+    - Start() : void
+    - GetMusicVolume() : void
+    - IncreaseMusicVolume() : void
+    - DecreaseMusicVolume() : void
+    - SetSoundVolume() : void
+    - SetMusicVolume() : void
+}
+MonoBehaviour <|-- SoundUI
+@enduml
